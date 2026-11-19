@@ -10,8 +10,8 @@
 <link rel="icon" href="img/favicon-48.png" sizes="48x48" type="image/png">
 <link rel="apple-touch-icon" href="img/favicon-192.png">
 <link rel="preload" href="fonts/archivo-rdzen.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" type="image/webp" href="img/hero-m-724.webp" media="(max-width: 759px)" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-724.webp 724w" imagesizes="100vw">
-<link rel="preload" as="image" type="image/webp" href="img/hero-1600.webp" media="(min-width: 760px)" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-1920.webp 1920w" imagesizes="100vw">
+<link rel="preload" as="image" type="image/webp" href="img/hero-m-900.webp" media="(max-width: 759px)" imagesrcset="img/hero-m-600.webp 600w, img/hero-m-900.webp 900w, img/hero-m-1200.webp 1200w" imagesizes="100vw">
+<link rel="preload" as="image" type="image/webp" href="img/hero-1920.webp" media="(min-width: 760px)" imagesrcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w" imagesizes="100vw">
 <style>
 @font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2026}
 @font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
@@ -75,7 +75,7 @@ section{scroll-margin-top:var(--hdr)}
 /* ---------- pierwszy ekran ---------- */
 .hero{position:relative;min-height:clamp(600px,calc(100svh - var(--hdr)),1100px);display:flex;align-items:center;color:#fff;background:var(--navy);overflow:hidden}
 .hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
-.hero picture img{object-fit:cover;object-position:62% 50%}
+.hero picture img{object-fit:cover;object-position:50% 62%}
 .hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(4,21,47,.93) 0%,rgba(4,21,47,.84) 34%,rgba(4,21,47,.35) 64%,rgba(4,21,47,.08) 100%)}
 .hero-in{position:relative;z-index:2;width:var(--cw);margin-inline:auto;padding:clamp(56px,8vh,110px) 0 clamp(64px,9vh,120px)}
 .hero-txt{position:relative;max-width:760px;padding-left:clamp(28px,3vw,48px)}
@@ -269,7 +269,7 @@ details p{margin:0 0 22px;color:var(--text);max-width:46em}
   body{font-size:16.5px;padding-bottom:64px}
   .logo .mk{height:42px}.logo .wm{height:21px}
   .hero{min-height:0;display:block;background:var(--navy)}
-  .hero picture{position:relative;display:block;height:auto;aspect-ratio:724/600}
+  .hero picture{position:relative;display:block;height:auto;aspect-ratio:1600/1326}
   .hero picture img{position:absolute;object-position:50% 50%}
   .hero::before{background:linear-gradient(180deg,rgba(4,21,47,0) 0,rgba(4,21,47,0) calc(100vw * .829 - 170px),rgba(4,21,47,.72) calc(100vw * .829 - 70px),var(--navy) calc(100vw * .829 - 4px),var(--navy) 100%)}
   .hero h1{text-shadow:0 1px 12px rgba(4,21,47,.55)}
@@ -334,8 +334,8 @@ details p{margin:0 0 22px;color:var(--text);max-width:46em}
 <main>
 <section class="hero" aria-label="priv.credit">
   <picture>
-    <source media="(max-width: 759px)" type="image/webp" srcset="img/hero-m-480.webp 480w, img/hero-m-724.webp 724w" sizes="100vw">
-    <img src="img/hero-1600.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-1920.webp 1920w" sizes="100vw" width="1600" height="1066" alt="Kamienice nad Motławą w Gdańsku" fetchpriority="high">
+    <source media="(max-width: 759px)" type="image/webp" srcset="img/hero-m-600.webp 600w, img/hero-m-900.webp 900w, img/hero-m-1200.webp 1200w" sizes="100vw">
+    <img src="img/hero-1920.webp" srcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w" sizes="100vw" width="1920" height="1280" alt="Długie Pobrzeże i Żuraw nad Motławą w Gdańsku" fetchpriority="high">
   </picture>
   <div class="hero-in">
     <div class="hero-txt">
@@ -360,7 +360,7 @@ details p{margin:0 0 22px;color:var(--text);max-width:46em}
     </div>
     <div class="two">
       <article class="side">
-        <div class="ph"><img src="img/dom-900.webp" srcset="img/dom-560.webp 560w, img/dom-900.webp 900w" sizes="(max-width:759px) 92vw, 46vw" width="900" height="675" alt="Rodzina przed domem jednorodzinnym" loading="lazy" decoding="async"></div>
+        <div class="ph"><img src="img/dom-900.webp" srcset="img/dom-560.webp 560w, img/dom-900.webp 900w, img/dom-1400.webp 1400w" sizes="(max-width:759px) 92vw, min(46vw, 800px)" width="900" height="675" alt="Rodzina przed domem jednorodzinnym" loading="lazy" decoding="async"></div>
         <div class="bd">
           <span class="who">Dla klienta</span>
           <h3>Potrzebujesz finansowania?</h3>
@@ -369,7 +369,7 @@ details p{margin:0 0 22px;color:var(--text);max-width:46em}
         </div>
       </article>
       <article class="side">
-        <div class="ph"><img src="img/analiza-900.webp" srcset="img/analiza-560.webp 560w, img/analiza-900.webp 900w" sizes="(max-width:759px) 92vw, 46vw" width="900" height="415" alt="Analiza dokumentów i wyliczeń" loading="lazy" decoding="async"></div>
+        <div class="ph"><img src="img/analiza-900.webp" srcset="img/analiza-560.webp 560w, img/analiza-900.webp 900w, img/analiza-1400.webp 1400w" sizes="(max-width:759px) 120vw, min(60vw, 1040px)" width="900" height="415" alt="Analiza dokumentów i wyliczeń" loading="lazy" decoding="async"></div>
         <div class="bd">
           <span class="who">Dla inwestora</span>
           <h3>Dysponujesz kapitałem?</h3>
@@ -535,7 +535,7 @@ details p{margin:0 0 22px;color:var(--text);max-width:46em}
       <a class="mail" href="mailto:office@priv.credit">office@priv.credit</a>
       <p class="hrs">Poniedziałek - piątek, 9:00-17:00</p>
       <p class="op">Operator serwisu: ACN Group Sp. z o.o., ul. Jagiełły 2/5, 82-400 Sztum<br>KRS 0000968384, NIP 9542839784, REGON 521835320</p>
-      <div class="cph"><img src="img/doradca-900.webp" srcset="img/doradca-560.webp 560w, img/doradca-900.webp 900w" sizes="(max-width:1023px) 92vw, 36vw" width="900" height="682" alt="Doradczyni analizuje dokumenty klienta" loading="lazy" decoding="async"></div>
+      <div class="cph"><img src="img/doradca-900.webp" srcset="img/doradca-560.webp 560w, img/doradca-900.webp 900w, img/doradca-1400.webp 1400w" sizes="(max-width:1023px) 92vw, min(36vw, 640px)" width="900" height="682" alt="Doradczyni analizuje dokumenty klienta" loading="lazy" decoding="async"></div>
     </div>
     <form class="form" id="form" novalidate>
       <h3>Zgłoszenie</h3>
@@ -605,6 +605,7 @@ details p{margin:0 0 22px;color:var(--text);max-width:46em}
   // aktywna pozycja menu
   var links=[].slice.call(n.querySelectorAll('a')),secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
   if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=secs.indexOf(e.target);links.forEach(function(l,j){l.classList.toggle('on',j===i)})}})},{rootMargin:'-45% 0px -50% 0px'});secs.forEach(function(s){s&&io.observe(s)})}
+  window.addEventListener('scroll',function(){if(scrollY<200)links.forEach(function(l){l.classList.remove('on')})},{passive:true});
   // przyciski wybierają temat formularza
   document.querySelectorAll('[data-role]').forEach(function(a){a.addEventListener('click',function(){var r=document.querySelector('input[name=temat][value='+a.dataset.role+']');if(r)r.checked=true})});
   document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').style.display='block'});
